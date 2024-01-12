@@ -1,0 +1,173 @@
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #DCE0E9;
+}
+
+#contTitulo {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+h1 {
+    width: 100%;
+    color: #30391F;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    font-weight: lighter;
+    margin: 0px;
+    text-align: center;
+}
+
+table {
+    width: 95%;
+    border: 1px solid #30391F;
+    margin-top: 10px;
+    color: #30391F;
+    background-color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+tr {
+    border: 1px solid #30391F;
+    font-size: 20px;
+}
+
+th {
+    border: none;
+    font-size: 15px;
+    background-color: #ACCC7B;
+}
+
+td {
+    border: none;
+    font-size: 15px;
+}
+
+rolColumna td,
+rolColumna tr,
+rolColumna td,
+fila td,
+fila tr,
+fila td {
+    border: none;
+    font-size: 15px;
+}
+
+/*--------------------------------------------------------------------------------------------*/
+/*Media Queries*/
+@media (max-width:1029px) {
+
+    h1 {
+        font-size: 27px;
+    }
+
+    th,
+    td,
+    rolColumna td,
+    rolColumna tr,
+    rolColumna td,
+    fila td,
+    fila tr,
+    fila td {
+        font-size: 13px;
+    }
+
+}
+
+@media (max-width:800px) {
+
+    h1 {
+        font-size: 24px;
+    }
+
+    th,
+    td,
+    rolColumna td,
+    rolColumna tr,
+    rolColumna td,
+    fila td,
+    fila tr,
+    fila td {
+        font-size: 11px;
+    }
+}
+
+@media (max-width:500px) {
+
+    h1 {
+        font-size: 21px;
+    }
+
+    th,
+    td,
+    rolColumna td,
+    rolColumna tr,
+    rolColumna td,
+    fila td,
+    fila tr,
+    fila td {
+        font-size: 9px;
+    }
+}
+
+
+@media (max-width:400px) {
+
+    h1 {
+        font-size: 18px;
+    }
+
+    th,
+    td,
+    rolColumna td,
+    rolColumna tr,
+    rolColumna td,
+    fila td,
+    fila tr,
+    fila td {
+        font-size: 7px;
+    }
+}
+
+@media (max-width:300px) {
+
+    h1 {
+        font-size: 15px;
+    }
+
+    th,
+    td,
+    rolColumna td,
+    rolColumna tr,
+    rolColumna td,
+    fila td,
+    fila tr,
+    fila td {
+        font-size: 5px;
+    }
+}
+
+@media (max-width:200px) {
+
+    h1 {
+        font-size: 12px;
+    }
+
+    th,
+    td,
+    rolColumna td,
+    rolColumna tr,
+    rolColumna td,
+    fila td,
+    fila tr,
+    fila td {
+        font-size: 3px;
+    }
+}

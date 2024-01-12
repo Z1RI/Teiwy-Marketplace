@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Órdenes de Compra</title>
+    <link rel="stylesheet" href="../Css/Order_History.css">
+</head>
+
+<body>
+    <div id="contenedor">
+        <div id="contTitulo">
+            <h1>Listado de Órdenes de Compra</h1>
+        </div>
+        <table>
+            <thead>
+                <tr>
+                    <!-- <th>Número de Orden</th> -->
+                    <th>Fecha de Orden</th>
+                    <th>Destinatario</th>
+                    <th>Dirección</th>
+                    <th>Ciudad</th>
+                    <th>Código Postal</th>
+                    <th>Email</th>
+                    <th>Estado</th>
+                    <th>Total</th>
+                </tr>
+            </thead>
+            <tbody id="OrdersHistoryContainer">
+                <!-- Aquí se agregarán dinámicamente las filas de las órdenes de compra -->
+                <!-- Ejemplo de una fila 
+                    <tr>
+                <td>1</td>
+                <td>2023-10-31</td>
+                <td>Nombre Destinatario</td>
+                <td>Dirección de Ejemplo</td>
+                <td>Ciudad Ejemplo</td>
+                <td>12345</td>
+                <td>correo@example.com</td>
+                <td>$100.00</td>
+                <td>Camisa</td>
+            </tr
+            -->
+
+
+            </tbody>
+        </table>
+    </div>
+</body>
+<script type="module" src="../../Backend/PaymentProcessManager/app_orderHistory.js"></script>
+
+</html>

@@ -1,0 +1,153 @@
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #DCE0E9;
+}
+
+#contenedor {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#contTitulo {
+    width: 95%;
+    display: flex;
+    justify-content: center;
+}
+
+h1 {
+    width: 100%;
+    color: #30391F;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 28px;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 5px;
+}
+
+table {
+    width: 98%;
+    border: 1px solid #30391F;
+    color: #30391F;
+    background-color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+}
+
+tr {
+    border: 1px solid #30391F;
+    font-size: 14px;
+}
+
+th {
+    border: none;
+    font-size: 14px;
+    background-color: #ACCC7B;
+}
+
+td {
+    border: none;
+    font-size: 14px;
+}
+
+.OrderDiv td,
+.OrderDiv tr,
+.OrderDiv td {
+    border: none;
+    font-size: 14px;
+}
+
+/*--------------------------------------------------------------------------------------------*/
+/*Media Queries*/
+@media (max-width:1029px) {
+
+    h1 {
+        font-size: 25px;
+    }
+
+    th,
+    td,
+    .OrderDiv td,
+    .OrderDiv tr {
+        font-size: 12px;
+    }
+
+}
+
+@media (max-width:800px) {
+
+    h1 {
+        font-size: 22px;
+    }
+
+    th,
+    td,
+    .OrderDiv td,
+    .OrderDiv tr {
+        font-size: 10px;
+    }
+}
+
+@media (max-width:500px) {
+
+    h1 {
+        font-size: 19px;
+    }
+
+    th,
+    td,
+    .OrderDiv td,
+    .OrderDiv tr {
+        font-size: 8px;
+    }
+}
+
+
+@media (max-width:400px) {
+
+    h1 {
+        font-size: 16px;
+    }
+
+    th,
+    td,
+    .OrderDiv td,
+    .OrderDiv tr {
+        font-size: 6px;
+    }
+}
+
+@media (max-width:300px) {
+
+    h1 {
+        font-size: 13;
+    }
+
+    th,
+    td,
+    .OrderDiv td,
+    .OrderDiv tr {
+        font-size: 4px;
+    }
+}
+
+@media (max-width:200px) {
+
+    h1 {
+        font-size: 10px;
+    }
+
+    th,
+    td,
+    .OrderDiv td,
+    .OrderDiv tr {
+        font-size: 2px;
+    }
+}

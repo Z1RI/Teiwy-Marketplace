@@ -1,0 +1,188 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #DCE0E9;
+}
+
+#contMenuHorizontal {
+    width: 100%;
+    background-color: #30391F;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    height: 60px;
+}
+
+.btnHorizontal {
+    width: 50%;
+    background-color: #30391F;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+}
+
+.btnHorizontal:hover {
+    background-color: #668A4C;
+    color: #30391F;
+}
+
+#container1 {
+    width: 80%;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    border-radius: 5px;
+}
+
+#contTitulo {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #ACCC7B;
+}
+
+h1 {
+    color: #30391F;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.formulario {
+    width: 75%;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+ul {
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+}
+
+li {
+    width: 100%;
+    list-style: none;
+    margin-bottom: 20px;
+    padding: 0px;
+    border: 0px;
+}
+
+label {
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    color: #30391F;
+    text-decoration: none;
+    text-align: left;
+    border-radius: 5px;
+}
+
+input {
+    width: 100%;
+    border: none;
+    background-color: #ACCC7B;
+}
+
+.contButtons {
+    width: 70%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+}
+
+.btnForm {
+    width: 100%;
+    height: 25px;
+    border: none;
+    border-radius: 5px;
+    background-color: #30391F;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.btnForm:hover {
+    background-color: #668A4C;
+    color: #30391F;
+}
+
+.contPayment {
+    width: 75%;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.contPayment h1 {
+    color: #30391F;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.contPayment .btnForm {
+    width: 100%;
+    height: 40px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #30391F;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.contPayment .btnForm:hover {
+    background-color: #668A4C;
+    color: #30391F;
+}
+
+/*Media Queries*/
+@media (max-width:1029px) {
+    #contMenuHorizontal {
+        height: 53px;
+    }
+    .btnHorizontal {
+        font-size: 16px;
+    }
+    ul {
+        padding-left: 35px;
+    }
+    h1 {
+        font-size: 35px;
+    }
+    h2,
+    h3 {
+        font-size: 22px;
+    }
+    label,
+    .texto,
+    .textoOculto {
+        font-size: 18px;
+    }
+    .btnForm {
+        font-size: 14px;
+    }
+}
+
+/* ... (Tus Media Queries) ... */

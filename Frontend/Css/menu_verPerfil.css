@@ -1,0 +1,279 @@
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #DCE0E9;
+}
+
+#contMenuHorizontal {
+    width: 100%;
+    background-color: grey;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    height: 60px;
+}
+
+.btnHorizontal {
+    width: 25%;
+    background-color: #30391F;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+}
+
+.btnHorizontal:hover {
+    background-color: #668A4C;
+    color: #30391F;
+}
+
+#perfilUsuario {
+    background-color: #668A4C;
+    color: #30391F;
+}
+
+#contContenido {
+    margin-top: 50px;
+    width: 80%;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    background-color: #ffffff;
+}
+
+#contTitulo {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #ACCC7B;
+}
+
+#contInfUsuario {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+#contImagen {
+    width: 40%;
+    margin-top: 22px;
+    margin-bottom: 22px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+}
+
+#profilePicture {
+    width: 90%;
+}
+
+#contInformacion {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+h1 {
+    width: 80%;
+    color: #30391F;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 35px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.parrafo {
+    width: 90%;
+    color: #30391F;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: left;
+}
+
+/*--------------------------------------------------------------------------------------------*/
+/*Media Queries*/
+@media (max-width:1029px) {
+
+    #contMenuHorizontal {
+        height: 53px;
+    }
+
+    #contContenido {
+        margin-top: 45px;
+        height: 480px;
+    }
+
+    h1 {
+        font-size: 31px;
+    }
+
+    h2,
+    h3 {
+        font-size: 22px;
+    }
+
+    .btnHorizontal {
+        font-size: 16px;
+    }
+
+    .parrafo {
+        font-size: 26px;
+    }
+}
+
+@media (max-width:800px) {
+
+    #contMenuHorizontal {
+        height: 46px;
+    }
+
+    #contContenido {
+        margin-top: 40px;
+        height: 460px;
+    }
+
+    h1 {
+        font-size: 27px;
+    }
+
+    h2,
+    h3 {
+        font-size: 19px;
+    }
+
+    .btnHorizontal {
+        font-size: 14px;
+    }
+
+    .parrafo {
+        font-size: 22px;
+    }
+}
+
+@media (max-width:500px) {
+
+    #contMenuHorizontal {
+        height: 39px;
+    }
+
+    #contContenido {
+        margin-top: 35px;
+        height: 440px;
+    }
+
+    h1 {
+        font-size: 23px;
+    }
+
+    h2,
+    h3 {
+        font-size: 16px;
+    }
+
+    .btnHorizontal {
+        font-size: 11px;
+    }
+
+    .parrafo {
+        font-size: 18px;
+    }
+}
+
+
+@media (max-width:400px) {
+
+    #contMenuHorizontal {
+        height: 32px;
+    }
+
+    #contContenido {
+        margin-top: 30px;
+        height: 420px;
+    }
+
+    h1 {
+        font-size: 19px;
+    }
+
+    h2,
+    h3 {
+        font-size: 13px;
+    }
+
+    .btnHorizontal {
+        font-size: 8px;
+    }
+
+    .parrafo {
+        font-size: 14px;
+    }
+}
+
+@media (max-width:300px) {
+
+    #contMenuHorizontal {
+        height: 25px;
+    }
+
+    #contContenido {
+        margin-top: 25px;
+        height: 400px;
+    }
+
+    h1 {
+        font-size: 15px;
+    }
+
+    h2,
+    h3 {
+        font-size: 10px;
+    }
+
+    .btnHorizontal {
+        font-size: 5px;
+    }
+
+    .parrafo {
+        font-size: 10px;
+    }
+}
+
+@media (max-width:200px) {
+
+    #contMenuHorizontal {
+        height: 18px;
+    }
+
+    #contContenido {
+        margin-top: 20px;
+        height: 380px;
+    }
+
+    h1 {
+        font-size: 11px;
+    }
+
+    h2,
+    h3 {
+        font-size: 7px;
+    }
+
+    .btnHorizontal {
+        font-size: 2px;
+    }
+
+    .parrafo {
+        font-size: 6px;
+    }
+}

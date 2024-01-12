@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <title>Document</title>
+    <link rel="stylesheet" href="Css/menu_temportal.css">
+    <link rel="stylesheet" href="Css/modal_ExitoError.css">
+
+</head>
+
+<body>
+    <div id="contMenuHorizontal">
+        <button class="userMenuText" id="perfilUsuario">TEIWY</button>
+        <button class="userMenuText" id="barraSeparacion" >|</button>
+        <button class="userMenuText" id="UserMenu">User</button>
+        <button class="userMenuText" id="emailMenu">User</button>
+
+        <button class="userMenuText" id="barraSeparacion" >|</button>
+        <button class="btnHorizontal" id="VerPerfilMenuButton">Ver Perfil</button>
+        <button class="btnHorizontal" id="menuCarrito">Carrito</button>
+        <button class="btnHorizontal" id="closeSession">Cerrar Sesion</button>
+    </div>
+    <div id="contContenido">
+        <!-- Contenedor para mostrar los productos -->
+        <div id="productosContainer"></div> 
+    </div>
+
+    <!-- Contenedor del modal -->
+
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+          <span class="close" id="cerrarModalM">&times;</span>
+          <p id="mensajeModal"></p>
+        </div>
+      </div>
+      
+</body>
+    <script type="module" src="../Backend/notificaciones/notificaciones.js"></script>
+    <script type="module" src="../Backend/StoreManager/app_Store_Generator.js"></script>
+    <script type="module" src="../Backend/UserManager/app_user_observer.js"></script>
+    <script type="module" src="../Backend/UserManager/app__menu.js"></script>
+</html>

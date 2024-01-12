@@ -1,0 +1,177 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #DCE0E9;
+}
+
+#contMenuHorizontal {
+    width: 100%;
+    background-color: #30391F;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    height: 60px;
+}
+
+.btnHorizontal, .userMenuText {
+    width: 20%;
+    background-color: #30391F;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+}
+
+#perfilUsuario, #barraSeparacion {
+    width: 10%;
+    background-color: #668A4C;
+    color: #30391F;
+    font-size: 28px;
+    font-weight: bold;
+    border: none;
+}
+
+#barraSeparacion{
+    width: 10%;
+    background-color: #30391F;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+}
+
+.btnHorizontal:hover {
+    background-color: #668A4C;
+    color: #30391F;
+}
+
+#contContenido {
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.parrafo {
+    width: 80%;
+    color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: left;
+}
+
+/* Reglas de medios para hacer el diseño más responsivo */
+
+@media (max-width: 1029px) {
+    #contMenuHorizontal {
+        height: 53px;
+    }
+    .btnHorizontal, .userMenuText, #perfilUsuario, #barraSeparacion {
+        font-size: 16px;
+        width: 20%;
+    }
+}
+
+@media (max-width: 800px) {
+    #contMenuHorizontal {
+        height: 46px;
+    }
+    .btnHorizontal, .userMenuText, #perfilUsuario, #barraSeparacion {
+        font-size: 14px;
+        width: 20%;
+    }
+}
+
+@media (max-width: 500px) {
+    #contMenuHorizontal {
+        height: 39px;
+    }
+    .btnHorizontal, .userMenuText, #perfilUsuario, #barraSeparacion {
+        font-size: 12px;
+        width: 20%;
+    }
+}
+
+@media (max-width: 400px) {
+    #contMenuHorizontal {
+        height: 32px;
+    }
+    .btnHorizontal, .userMenuText, #perfilUsuario, #barraSeparacion {
+        font-size: 10px;
+        width: 20%;
+    }
+}
+
+@media (max-width: 300px) {
+    #contMenuHorizontal {
+        height: 25px;
+    }
+    .btnHorizontal, .userMenuText, #perfilUsuario, #barraSeparacion {
+        font-size: 8px;
+        width: 20%;
+    }
+}
+
+@media (max-width: 200px) {
+    #contMenuHorizontal {
+        height: 18px;
+    }
+    .btnHorizontal, .userMenuText, #perfilUsuario, #barraSeparacion {
+        font-size: 6px;
+        width: 20%;
+    }
+}
+
+#productosContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.productoDiv {
+    width: calc(33.33% - 20px);
+    margin: 10px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    border: 1px solid #30391F;
+    background-color: #f9f9f9;
+}
+
+.productoDiv img {
+    max-width: 100%;
+    height: auto;
+}
+
+.productoDiv button {
+    background-color: #30391F;
+    color: #ffffff;
+    padding: 10px;
+    margin-top: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+/* Reglas de medios para hacer el diseño más responsivo */
+
+@media (max-width: 768px) {
+    .productoDiv {
+        width: calc(50% - 20px);
+    }
+}
+
+@media (max-width: 480px) {
+    .productoDiv {
+        width: calc(100% - 20px);
+    }
+}

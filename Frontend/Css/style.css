@@ -1,0 +1,98 @@
+:root{
+  --color-acento: #025768;
+  --color-acento-claro: #49c583b2;
+  --color-texto: black;
+}
+
+
+body{
+  margin: 0;
+  padding: 0;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background:#e5e5e5;
+  font-family: 'Young Serif', serif;  
+  background-image: url("../imagenes/teiwyBackground.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 20% -666px;
+}
+
+h3, p{
+  margin: 5px;
+}
+
+.escondido{
+  display: none;
+}
+
+a{
+  background-color: unset;
+  border:unset;
+  cursor:pointer;
+  text-decoration: none;
+  transition: 200ms;
+  color: var(--color-texto);
+}
+
+button{
+  transition: 200ms;
+}
+
+a:hover:not(#cart), button:hover{
+  color: var(--color-acento);
+}
+
+/* Header */
+header{
+  margin: 0;
+  padding: 0;
+  box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.09);
+  margin-bottom: 10px;
+  font-size: larger;
+  background-color: #49C583;
+}
+
+header nav{
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: flex-start; /* Cambiado de space-between a flex-start */
+  background-color: #49C583;
+  width: 100%;
+  height: 60px;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+
+#logo{
+  height: 40px;
+  margin: 10px;
+}
+
+header nav div{
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+header nav img{
+  height: 0px;
+}
+
+#cuenta-carrito{
+  position: absolute;
+  background-color: var(--color-acento);
+  border-radius: 100%;
+  display: inline-block;
+  height: 25px;
+  line-height: 25px;
+  aspect-ratio: 1;
+  text-align: center;
+  /* margin-bottom: 15px; */
+}
+

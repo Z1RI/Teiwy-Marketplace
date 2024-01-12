@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Productos</title>
+    <link rel="stylesheet" href="../Css/modal_ExitoError.css">
+    <link rel="stylesheet" href="../Css/modal_productos.css">
+</head>
+
+<body>
+    <h1>Gestión de Productos</h1>
+    <!-- Aquí puedes agregar el contenido de tu página web relacionado con la gestión de productos -->
+    <br>
+    <!-- Contenedor para mostrar los productos -->
+    <div id="productosContainer"></div>
+
+    <button class="boton" onclick="window.location.href='../menu_verPerfil.html'">Cancelar</button>
+
+    <div id="modalCambioProducto" class="modal modal-productos">
+        <div class="modal-contenido">
+            <span class="cerrar-modal" id="cerrarModalCambioProducto">&times;</span>
+
+            <!-- Detalles del usuario que lo posteo -->
+            <div class="campo">
+                <h2>Detalles del Usuario</h2>
+                <p class="parrafo" id="nombreUsuario">Nombre del Usuario</p>
+            </div>
+            <div class="separador"></div>
+            <div class="campo">
+                <!-- Aquí poner imagen del perfil del usuario en pequeño -->
+                <img src="default" id="profilePictureUsuario" style="width: 100%; max-width: 200px; height: auto;">
+            </div>
+            <div class="separador"></div>
+            <div class="campo">
+                <p class="parrafo" id="correoUsuario">Correo del Usuario</p>
+            </div>
+            
+            <div class="separador-grueso"></div>
+
+            <!-- Detalles del producto -->
+            <div class="campo">
+                <h2>Detalles del Producto</h2>
+                <p class="parrafo" id="nombreProducto">Nombre del Producto</p>
+            </div>
+            <div class="separador"></div>
+            <div class="campo">
+                <p class="parrafo" id="precioProducto">Precio: $100.00</p>
+            </div>
+            <div class="separador"></div>
+            <div class="campo">
+                <!-- Aquí poner imagen actual en pequeño -->
+                <img src="default" id="profilePicture" style="width: 100%; max-width: 200px; height: auto;">
+            </div>
+            <div class="separador"></div>
+            <div class="campo">
+                <p class="parrafo" id="descripcionProducto">Descripción del Producto</p>
+            </div>
+            <div class="separador"></div>
+        </div>
+    </div>
+
+        <!-- Contenedor del modal -->
+
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+              <span class="close" id="cerrarModalM">&times;</span>
+              <p id="mensajeModal"></p>
+            </div>
+          </div>
+
+</body>
+    <script type="module" src="../../Backend/notificaciones/notificaciones.js"></script>
+    <script type="module" src="../../Backend/adminManager/app_globalProductGestor.js"></script>
+</html>

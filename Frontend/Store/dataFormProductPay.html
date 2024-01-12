@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orden de Compra</title>
+    <link rel="stylesheet" href="../Css/dataFormProductPay.css">
+    
+        <script src="https://js.stripe.com/v3/"></script>
+    
+</head>
+
+<body>
+    <div id="contMenuHorizontal">
+        <button class="btnHorizontal" id="VerPerfilMenuButton">Caja</button>
+        <button class="btnHorizontal" id="volverCarritoButton" type="button">Regresar</button>
+    </div>
+    <div id="container1">
+        <div id="contTitulo">
+            <h1>Datos de Entrega</h1>
+        </div>
+        <form class="formulario">
+            <ul>
+                <li>
+                    <label for="nombreDestinatario">Nombre del Destinatario:</label>
+                    <input type="text" id="nombreDestinatario" name="nombreDestinatario" required>
+                </li>
+                <li>
+                    <label for="direccion">Dirección de Envío:</label>
+                    <input type="text" id="direccion" name="direccion" required>
+                </li>
+                <li>
+                    <label for="ciudad">Ciudad:</label>
+                    <input type="text" id="ciudad" name="ciudad" required>
+                </li>
+                <li>
+                    <label for="codigoPostal">Código Postal:</label>
+                    <input type="text" id="codigoPostal" name="codigoPostal" required>
+                </li>
+            </ul>
+        </form>
+        <div class="contButtons">
+            <button class="btnForm" id="sendFormDatabutton">Enviar</button>
+        </div>
+        <div class="contPayment" id="contPayment" style="display: none;">
+            <h1>Orden Generada, puedes proseguir al pago</h1>
+            <button class="btnForm" type="button" id="realizarPagoButton" style="display: none;">Realizar Pago</button>
+        </div>
+</body>
+
+    <script type="module" src="../../Backend/PaymentProcessManager/app_dataProcess.js"></script>
+    <script type="module" src="../../Backend/PaymentProcessManager/app_StripeProcess.js"></script>
+</html>

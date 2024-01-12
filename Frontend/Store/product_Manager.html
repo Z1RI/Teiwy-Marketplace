@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Productos</title>
+    <link rel="stylesheet" href="../Css/modal_ExitoError.css">
+    <link rel="stylesheet" href="../Css/modal_productos.css">
+</head>
+
+<body>
+    <h1>Gestión de Productos</h1>
+    <!-- Aquí puedes agregar el contenido de tu página web relacionado con la gestión de productos -->
+    <br>
+    <!-- Contenedor para mostrar los productos -->
+    <div id="productosContainer"></div>
+
+    <button class="boton" onclick="window.location.href='../menu_verPerfil.html'">Cancelar</button>
+
+    <div id="modalCambioProducto" class="modal modal-productos">
+        <div class="modal-contenido">
+            <span class="cerrar-modal" id="cerrarModalCambioProducto">&times;</span>
+            <div class="campo">
+                <p class="parrafo" id="nombreProducto">Nombre del Producto</p>
+                <label class="parrafo" for="nombre">Nuevo Nombre del Producto:</label>
+                <input type="text" id="nombre" name="nombre" required>
+            </div>
+            <div class="separador"></div>
+            <div class="campo">
+                <p class="parrafo" id="precioProducto">Precio: $100.00</p>
+                <label class="parrafo" for="precio">Nuevo Precio del Producto:</label>
+                <input type="number" id="precio" name="precio" min="0" step="0.01" required>
+            </div>
+            <div class="separador"></div>
+            <div class="campo">
+                <!-- Aquí poner imagen actual en pequeño -->
+                <img src="default" id="profilePicture" style="width: 100%; max-width: 200px; height: auto;">
+                <label class="parrafo" for="imagen">Nueva Imagen:</label>
+                <input type="file" id="imagen" name="imagen" accept="image/*">
+            </div>
+            <div class="separador"></div>
+            <div class="campo">
+                <p class="parrafo" id="descripcionProducto">Descripción del Producto</p>
+                <label class="parrafo" for="descripcion">Nueva descripción del Producto:</label>
+                <textarea id="descripcion" name="descripcion" rows="4" cols="50"></textarea>
+            </div>
+            <div class="separador"></div>
+            <div id="guardarCambiosbuttonContainer"></div>
+            <div id="contBoton">
+                <button class="boton" id="guardarCambiosButton">Guardar Cambios</button>
+            </div>
+        </div>
+    </div>
+
+            <!-- Contenedor del modal -->
+
+     <div id="myModal" class="modal">
+        <div class="modal-content">
+          <span class="close" id="cerrarModalM">&times;</span>
+          <p id="mensajeModal"></p>
+        </div>
+      </div>
+
+</body>
+    <script type="module" src="../../Backend/notificaciones/notificaciones.js"></script>
+    <script type="module" src="../../Backend/StoreManager/app_product_manager.js"></script>
+</html>

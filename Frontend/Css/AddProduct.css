@@ -1,0 +1,348 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #DCE0E9;
+}
+
+#contMenuHorizontal {
+    width: 100%;
+    background-color: #30391F;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    height: 60px;
+}
+
+.btnHorizontal1 {
+    width: 10%;
+    background-color: #30391F;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+}
+
+#contContenido {
+    margin-top: 50px;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    background-color: #ffffff;
+}
+
+#contTitulo {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #ACCC7B;
+}
+
+h1 {
+    width: 80%;
+    color: #30391F;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 35px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+#productForm {
+    width: 90%;
+    margin-top: 15px;
+}
+
+ul {
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+}
+
+li {
+    width: 100%;
+    list-style: none;
+    margin-bottom: 20px;
+    padding: 0px;
+    border: 0px;
+}
+
+textarea {
+    width: 100%;
+}
+
+label {
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    color: #30391F;
+    text-decoration: none;
+    text-align: left;
+    border-radius: 5px;
+}
+
+input {
+    width: 100%;
+    border: none;
+}
+
+#nombre,
+#precio {
+    background-color: #ACCC7B;
+}
+
+.contButton {
+    width: 90%;
+    height: 25px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.btnForm {
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    background-color: #30391F;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.btnForm:hover {
+    background-color: #668A4C;
+    color: #30391F;
+}
+
+
+/*--------------------------------------------------------------------------------------------*/
+/*Media Queries*/
+@media (max-width:1029px) {
+
+    #contMenuHorizontal {
+        height: 53px;
+    }
+
+    #containerEditarPerfil {
+        margin-top: 45px;
+    }
+
+    h1 {
+        font-size: 31px;
+    }
+
+    h2,
+    h3 {
+        font-size: 22px;
+    }
+
+    .btnHorizontal1,
+    .btnHorizontal2 {
+        font-size: 16px;
+    }
+
+    .btnForm {
+        font-size: 14px;
+    }
+
+    .parrafo {
+        font-size: 26px;
+    }
+
+    label {
+        font-size: 18px;
+    }
+}
+
+@media (max-width:800px) {
+
+    #contMenuHorizontal {
+        height: 46px;
+    }
+
+    #containerEditarPerfil {
+        margin-top: 40px;
+    }
+
+    h1 {
+        font-size: 27px;
+    }
+
+    h2,
+    h3 {
+        font-size: 19px;
+    }
+
+    .btnHorizontal1,
+    .btnHorizontal2 {
+        font-size: 14px;
+    }
+
+    .btnForm {
+        font-size: 12px;
+    }
+
+    .parrafo {
+        font-size: 22px;
+    }
+
+    label {
+        font-size: 16px;
+    }
+}
+
+@media (max-width:500px) {
+
+    #contMenuHorizontal {
+        height: 39px;
+    }
+
+    #containerEditarPerfil {
+        margin-top: 35px;
+    }
+
+    h1 {
+        font-size: 23px;
+    }
+
+    h2,
+    h3 {
+        font-size: 16px;
+    }
+
+    .btnHorizontal1,
+    .btnHorizontal2 {
+        font-size: 11px;
+    }
+
+    .btnForm {
+        font-size: 10px;
+    }
+
+    .parrafo {
+        font-size: 18px;
+    }
+
+    label {
+        font-size: 14px;
+    }
+}
+
+
+@media (max-width:400px) {
+
+    #contMenuHorizontal {
+        height: 32px;
+    }
+
+    #containerEditarPerfil {
+        margin-top: 30px;
+    }
+
+    h1 {
+        font-size: 19px;
+    }
+
+    h2,
+    h3 {
+        font-size: 13px;
+    }
+
+    .btnHorizontal1,
+    .btnHorizontal2 {
+        font-size: 8px;
+    }
+
+    .btnForm {
+        font-size: 8px;
+    }
+
+    .parrafo {
+        font-size: 14px;
+    }
+
+    label {
+        font-size: 12px;
+    }
+}
+
+@media (max-width:300px) {
+
+    #contMenuHorizontal {
+        height: 25px;
+    }
+
+    #containerEditarPerfil {
+        margin-top: 25px;
+    }
+
+    h1 {
+        font-size: 15px;
+    }
+
+    h2,
+    h3 {
+        font-size: 10px;
+    }
+
+    .btnHorizontal1,
+    .btnHorizontal2 {
+        font-size: 5px;
+    }
+
+    .btnForm {
+        font-size: 6px;
+    }
+
+    .parrafo {
+        font-size: 10px;
+    }
+
+    label {
+        font-size: 10px;
+    }
+}
+
+@media (max-width:200px) {
+
+    #contMenuHorizontal {
+        height: 18px;
+    }
+
+    #containerEditarPerfil {
+        margin-top: 20px;
+    }
+
+    h1 {
+        font-size: 11px;
+    }
+
+    h2,
+    h3 {
+        font-size: 7px;
+    }
+
+    .btnHorizontal1,
+    .btnHorizontal2 {
+        font-size: 2px;
+    }
+
+    .btnForm {
+        font-size: 4px;
+    }
+
+    .parrafo {
+        font-size: 6px;
+    }
+
+    label {
+        font-size: 8px;
+    }
+}

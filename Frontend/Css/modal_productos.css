@@ -1,0 +1,318 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #DCE0E9;
+}
+
+.modal-productos{
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background-color: #fefefe;
+    z-index: 1;
+    width: 50%;
+    height: auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.modal-contenido {
+    width: 100%;
+}
+
+.cerrar-modal {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.cerrar-modal:hover,
+.cerrar-modal:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.campo {
+    margin-bottom: 15px;
+}
+
+.separador {
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 15px;
+}
+
+/* Resto de tu CSS */
+.parrafo {
+    width: 90%;
+    color: #30391F;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: left;
+}
+
+h1 {
+    width: 80%;
+    color: #30391F;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 35px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+#contBoton {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.boton {
+    width: 50%;
+    border: none;
+    border-radius: 5px;
+    background-color: #30391F;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.boton:hover {
+    background-color: #668A4C;
+    color: #30391F;
+}
+
+label {
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    color: #30391F;
+    text-decoration: none;
+    text-align: left;
+    border-radius: 5px;
+}
+
+#precio,
+#nombre {
+    width: 100%;
+    border: none;
+    background-color: #ACCC7B;
+}
+
+#productosContainer {
+    width: 80%;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.productoDiv,
+#productosContainer div {
+    width: calc(33.33% - 20px);
+    margin: 10px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    border: 1px solid #30391F;
+    background-color: #ffffff;
+}
+
+.productoDiv h3,
+#productosContainer div h3 {
+    width: 80%;
+    color: #30391F;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.productoDiv img,
+#productosContainer div img {
+    max-width: 100%;
+    height: auto;
+}
+
+.productoDiv button,
+#productosContainer div button {
+    background-color: #30391F;
+    color: #ffffff;
+    padding: 10px;
+    margin-top: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.productoDiv button:hover,
+#productosContainer div button:hover {
+    background-color: #668A4C;
+    color: #30391F;
+}
+
+#productosContainer div p {
+    width: 90%;
+    color: #30391F;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: left;
+}
+
+#descripcion {
+    width: 100%;
+}
+
+.separador-grueso {
+    border-top: 2px solid #000; /* Cambia el color y el grosor según tus preferencias */
+    margin: 10px 0;
+}
+
+
+/*--------------------------------------------------------------------------------------------*/
+/*Media Queries*/
+@media (max-width:1029px) {
+
+    #contMenuHorizontal {
+        height: 53px;
+    }
+
+    #contContenido {
+        margin-top: 45px;
+        height: 480px;
+    }
+
+    h1 {
+        font-size: 31px;
+    }
+
+    .boton,
+    .parrafo,
+    label {
+        font-size: 14px;
+    }
+
+}
+
+@media (max-width:800px) {
+
+    #contMenuHorizontal {
+        height: 46px;
+    }
+
+    #contContenido {
+        margin-top: 40px;
+        height: 460px;
+    }
+
+    h1 {
+        font-size: 27px;
+    }
+
+    .boton,
+    .parrafo,
+    label {
+        font-size: 12px;
+    }
+}
+
+@media (max-width:500px) {
+
+    #contMenuHorizontal {
+        height: 39px;
+    }
+
+    #contContenido {
+        margin-top: 35px;
+        height: 440px;
+    }
+
+    h1 {
+        font-size: 23px;
+    }
+
+    .boton,
+    .parrafo,
+    label {
+        font-size: 10px;
+    }
+}
+
+
+@media (max-width:400px) {
+
+    #contMenuHorizontal {
+        height: 32px;
+    }
+
+    #contContenido {
+        margin-top: 30px;
+        height: 420px;
+    }
+
+    h1 {
+        font-size: 19px;
+    }
+
+    .boton,
+    .parrafo,
+    label {
+        font-size: 8px;
+    }
+}
+
+@media (max-width:300px) {
+
+    #contMenuHorizontal {
+        height: 25px;
+    }
+
+    #contContenido {
+        margin-top: 25px;
+        height: 400px;
+    }
+
+    h1 {
+        font-size: 15px;
+    }
+
+    .boton,
+    .parrafo,
+    label {
+        font-size: 6px;
+    }
+}
+
+@media (max-width:200px) {
+
+    #contMenuHorizontal {
+        height: 18px;
+    }
+
+    #contContenido {
+        margin-top: 20px;
+        height: 380px;
+    }
+
+    h1 {
+        font-size: 11px;
+    }
+
+    .boton,
+    .parrafo,
+    label {
+        font-size: 4x;
+    }
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Perfil de Usuario</title>
+    <link rel="stylesheet" href="Css/menu_verPerfil.css">
+</head>
+
+<body>
+    <div id="contMenuHorizontal">
+        <!-- Puedes agregar más información del perfil aquí -->
+        <button class="btnHorizontal" id="perfilUsuario">Mi Perfil</button>
+        <button class="btnHorizontal" id="editarPerfilMenu">Editar Perfil</button>
+        <!-- 
+        <button class="btnHorizontal" id="AgregarProductoPerfilMenuButton">Agregar Productos</button>
+        <button class="btnHorizontal" id="GestionarductoPerfilMenuButton">Gestionar Productos</button>
+        <button class="btnHorizontal" id="GestionarPedidoPerfilMenuButton">Gestionar Pedidos</button>
+        -->
+        <button class="btnHorizontal" id="GestionHistorialPedidos">Historial Compras</button>
+        <button class="btnHorizontal" id="Regresar" style="order: 100;">Regresar</button>
+    </div>
+
+    <div id="contContenido">
+        <div id="contTitulo">
+            <h1>Perfil de Usuario</h1>
+        </div>
+        <div id="contInfUsuario">
+            <div id="contImagen">
+                <!-- Sección de imagen de perfil -->
+                <img id="profilePicture" alt="Imagen de perfil">
+            </div>
+            <div id="contInformacion">
+                <!-- Sección de nombre de perfil -->
+                <p class="parrafo">
+                    Nombre de Usuario:<!-- Otros detalles del perfil, como descripción, edad, etc. -->
+                    <span class="parrafo" id="UserPerfil">User</span>
+                </p>
+                <p class="parrafo">
+                    Correo:
+                    <span class="parrafo" id="emailPerfil">User</span>
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+<Script type="module" src="../Backend/UserManager/app_user_perfil.js"></Script>
+
+</html>
